@@ -18,17 +18,23 @@ class App extends Component {
     this.setState({students: [...this.state.students, newStudent]})
   }
 
+  deleteStudent = (id) => {
+    const filteredStudents = this.state.students.filter(student => student.id !== id)
+
+    this.setState({students: filteredStudents})
+  }
+
   render() {
     return (
       <main className="App">
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
-        <Form addNewStudent={this.addNewStudent} />
         <h2>Staff</h2>
         <Cohort people={this.state.staff} />
         <h2>Students</h2>
-        <Cohort people={this.state.students} />
+        <Form addNewStudent={this.addNewStudent} />
+        <Cohort people={this.state.students} deleteStudent={this.deleteStudent}/>
       </main>
     );
   }

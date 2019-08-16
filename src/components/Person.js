@@ -1,13 +1,14 @@
 import React from 'react';
 import './Person.css';
 
-const Person = ({ name, quote, superlative, photo}) => {
+const Person = ({ name, quote, superlative, photo, id, deleteStudent}) => {
   return (
    <div className='person'>
     <h3>{name}</h3>
     <p>{quote}</p>
     <p>{superlative}</p>
     <img src={photo}/>
+    <button onClick={() => deleteStudent(id)}>Delete</button>
    </div>
   )
 }

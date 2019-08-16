@@ -2,9 +2,9 @@
 .person {
   display: flex;
   flex-direction: column;
-  height: 475px;
-  width: 88%;
-  background-color: rgba(225, 225, 225, .85);
+  height: 450px;
+  width: 80%;
+  background-color: rgba(159, 177, 236, 0.95);
   border-radius: 25px;
   justify-content: center;
   align-items: center;

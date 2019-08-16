@@ -3,14 +3,17 @@ import Person from './Person.js'
 // import App from './App.js'
 import './Cohort.css';
 
-const Cohort = ({people}) => {
+const Cohort = ({people, deleteStudent}) => {
+  console.log('deleteStudent :', deleteStudent);
   const peopleCards = people.map(human => {
     return (
       <Person 
+        id={ human.id }
         name= {human.name}
         quote={human.quote}
         superlative={human.superlative}
         photo={human.photo}
+        deleteStudent={deleteStudent}
       />
     )
   })
