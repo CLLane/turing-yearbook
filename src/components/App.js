@@ -24,6 +24,8 @@ class App extends Component {
     this.setState({students: filteredStudents})
   }
 
+  
+
   render() {
     return (
       <main className="App">

@@ -4,11 +4,11 @@ import Person from './Person.js'
 import './Cohort.css';
 
 const Cohort = ({people, deleteStudent}) => {
-  console.log('deleteStudent :', deleteStudent);
   const peopleCards = people.map(human => {
     return (
       <Person 
         id={ human.id }
+        key={human.id}
         name= {human.name}
         quote={human.quote}
         superlative={human.superlative}
