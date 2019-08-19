@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person should render to match the snapshot 1`] = `
+<div
+  className="person"
+  data-id={9999}
+>
+  <h3
+    contentEditable="true"
+    onKeyUp={[Function]}
+    suppressContentEditableWarning={true}
+  >
+    Chris
+  </h3>
+  <img
+    alt="the essence of one\\\\'s being"
+    src="cheese.jpeg"
+  />
+  <p
+    contentEditable="true"
+    onKeyUp={[Function]}
+    suppressContentEditableWarning={true}
+  >
+    Greg is awesome
+  </p>
+  <p
+    contentEditable="true"
+    onKeyUp={[Function]}
+    suppressContentEditableWarning={true}
+  >
+     
+    Mostlikely to ask Greg for testing help
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+</div>
+`;

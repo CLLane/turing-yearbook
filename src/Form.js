@@ -70,7 +70,7 @@ class Form extends Component {
           onChange={event => this.changeHandler(event)}
         />
 
-        <button onClick={event => this.submitNewStudent(event)}>SUBMIT</button>
+        <button className='submit' onClick={event => this.submitNewStudent(event)}>SUBMIT</button>
       </form>
     );
   }

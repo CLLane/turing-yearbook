@@ -4,23 +4,31 @@
   flex-direction: column;
   height: 450px;
   width: 80%;
-  background-color: rgba(159, 177, 236, 0.95);
-  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(86, 109, 185, 0.90);
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
 }
 
 img {
-  height: 60%;
-  width: 87%;
-  border-radius: 25px;
+  height: 50%;
+  width: 75%;
+  border-radius: 10px;
+  border: solid 3px darkblue
 }
 
 p {
-  font-style: italic;
+  font-weight: 700;
 }
 
 span {
   font-weight: bold;
   color: blue;
+}
+
+.button {
+  width: 75%;
+  height: 25px;
+  border-radius: 10px;
 }

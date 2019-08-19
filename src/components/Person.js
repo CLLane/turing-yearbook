@@ -1,19 +1,6 @@
 import React, { Component } from 'react';
 import './Person.css';
 
-// const Person = ({ name, quote, superlative, photo, id, deleteStudent}) => {
-//   return (
-//    <div className='person'>
-//     <h3>{name}</h3>
-//     <p>{quote}</p>
-//     <p>{superlative}</p>
-//     <img src={photo}/>
-//     <button onClick={() => deleteStudent(id)}>Delete</button>
-//    </div>
-//   )
-
-
-// }
 class Person extends Component {
   constructor(props){
     super(props)
@@ -24,7 +11,6 @@ class Person extends Component {
       superlative: this.props.superlative,
       photo: this.props.photo
     }
-    console.log('this.state :', this.state);
   }
 
   editHandler(event) {
@@ -56,7 +42,7 @@ class Person extends Component {
            onBlur={this.editSave}
            > {this.state.superlative}
         </p>
-        <button onClick={() => this.props.deleteStudent(this.state.id)}>Delete</button>
+        <button className='button' onClick={() => this.props.deleteStudent(this.state.id)}>Delete</button>
       </div>
     )
   }
