@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: url('https://ak9.picdn.net/shutterstock/videos/1007204479/thumb/1.jpg');
+  background: url(https://www.solidbackgrounds.com/images/website/950x534/950x534-blue-abstract-noise-free-website-background-image.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -20,7 +20,15 @@ body {
 }
 
 h1 {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(86, 109, 185, 0.90);
   padding: 10px;
-  color: limegreen;
+  border-radius: 10px;
+  color: black;
+}
+
+h2 {
+  background-color: rgba(86, 109, 185, 0.90);
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
 }
